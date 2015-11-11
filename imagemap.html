@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ESB Panorama</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="iFrame message passing test">
+  <meta name="viewport" content="width=device-width"></head>
+
+<body>
+
+  <p>
+    <img name="panorama" src="[[ds:/ImageMapTest/item/hotspot_main_image]]" usemap="#panorama" border="0" width="100%">
+  </p>
+
+
+  <map name="panorama">
+    <area shape="circle" coords="[[ds:/ImageMapTest/item/hotspot_x_pos_1]],[[ds:/ImageMapTest/item/hotspot_y_pos_1]],37" href="http://www.google.com" alt="hotspot1" class="hotspot">
+<area shape="circle" coords="[[ds:/ImageMapTest/item/hotspot_x_pos_2]],[[ds:/ImageMapTest/item/hotspot_y_pos_2]],37" href="http://www.google.com" alt="hotspot2">
+<area shape="circle" coords="[[ds:/ImageMapTest/item/hotspot_x_pos_3]],[[ds:/ImageMapTest/item/hotspot_y_pos_3]],37" href="http://www.google.com" alt="hotspot3">
+<area shape="circle" coords="[[ds:/ImageMapTest/item/hotspot_x_pos_4]],[[ds:/ImageMapTest/item/hotspot_y_pos_4]],37" href="http://www.google.com" alt="hotspot4">
+
+  </map>
+
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript" src="imageMapResizer.js"></script>
+  <script type="text/javascript">
+
+   $('map').imageMapResize();
+
+  </script>
+
+</body>
+</html>
